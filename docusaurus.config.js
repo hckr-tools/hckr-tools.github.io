@@ -29,12 +29,32 @@ const config = {
           showLastUpdateTime: true,
         },
         blog: false,
-        theme: { customCss: require.resolve('./src/css/custom.css') },
+        theme: {
+          customCss: [
+            require.resolve('./src/css/custom.css'),
+            require.resolve('./src/css/search.css'),
+            require.resolve('./src/css/mermaid.css'),
+          ],
+        },
       },
     ],
   ],
   themes: ['@docusaurus/theme-mermaid'],
   plugins: [
+    function layoutElkPlugin() {
+      return {
+        name: 'layout-elk-plugin',
+        configureWebpack() {
+          return {
+            resolve: {
+              alias: {
+                '@mermaid-js/layout-elk$': require.resolve('@mermaid-js/layout-elk/dist/mermaid-layout-elk.core.mjs'),
+              },
+            },
+          };
+        },
+      };
+    },
     'docusaurus-plugin-image-zoom',
     [
       '@docusaurus/plugin-content-docs',
@@ -50,9 +70,10 @@ const config = {
   themeConfig: {
     mermaid: {
       theme: { light: 'neutral', dark: 'dark' },
+      options: { flowchart: { useMaxWidth: false } },
     },
     zoom: {
-      selector: '.markdown img, .mermaid, .mermaid svg, svg.mermaid, svg.flowchart',
+      selector: '.markdown img',
       background: {
         light: 'rgba(15, 23, 42, 0.88)',
         dark: 'rgba(9, 13, 22, 0.94)',
@@ -127,7 +148,6 @@ const config = {
     },
     colorMode: {
       defaultMode: 'dark',
-      disableSwitch: false,
       respectPrefersColorScheme: true,
     },
     prism: {
