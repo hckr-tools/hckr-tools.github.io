@@ -494,7 +494,7 @@
   {
     "title": "Loading Unpacked Extension",
     "heading": "Step-by-Step Instructions",
-    "content": "Step-by-Step Instructions 1. Build the extension : Ensure the dist/ directory exists and contains manifest.json , service-worker.js , and content/ . 2. Open Extensions Manager in Chrome : - Navigate to chrome://extensions in your address bar. - Or open the Chrome Menu ( ⋮ ) - Extensions - Manage Extensions . 3. Enable Developer Mode : - Toggle the Developer mode switch in the top-right corner of chrome://extensions . 4. Load Unpacked : - Click the Load unpacked button in the top-left toolbar. - Select the dist/ directory inside this repository ( /path/to/hckr-browser-ext/dist ). 5. Pin and Open : - Click the Puzzle icon in Chrome's toolbar to find hckr — Dev Toolkit . - Pin it to the toolbar for 1-click access to the Side Panel.",
+    "content": "Step-by-Step Instructions 1. Build the extension : Ensure the dist/ directory exists and contains manifest.json , service-worker.js , and content/ . 2. Open Extensions Manager in Chrome : - Navigate to chrome://extensions in your address bar. - Or open the Chrome Menu ( ⋮ ) - Extensions - Manage Extensions . 3. Enable Developer Mode : - Toggle the Developer mode switch in the top-right corner of chrome://extensions . 4. Load Unpacked : - Click the Load unpacked button in the top-left toolbar. - Select the dist/ directory inside this repository ( /path/to/hckr-tools-browser-extension/dist ). 5. Pin and Open : - Click the Puzzle icon in Chrome's toolbar to find hckr — Dev Toolkit . - Pin it to the toolbar for 1-click access to the Side Panel.",
     "path": "/devdocs/getting-started/loading-unpacked/"
   },
   {

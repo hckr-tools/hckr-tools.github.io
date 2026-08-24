@@ -27,4 +27,4 @@ npm run serve
 
 ## Related Repositories
 
-- [hckr-browser-ext](https://github.com/hckr-tools/hckr-browser-ext): The core Chrome extension source code.
+- [hckr-browser-ext](https://github.com/hckr-tools/hckr-tools-browser-extension): The core Chrome extension source code.

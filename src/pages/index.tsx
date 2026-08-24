@@ -86,7 +86,7 @@ function HeroBanner() {
             ⚙️ Developer Architecture
           </Link>
           <Link
-            href="https://github.com/hckr-tools/hckr-browser-ext"
+            href="https://github.com/hckr-tools/hckr-tools-browser-extension"
             className="button button--outline button--lg"
             style={{
               padding: '0.8rem 1.8rem',
@@ -94,7 +94,7 @@ function HeroBanner() {
               borderRadius: '8px'
             }}
           >
-            ⭐ View on GitHub
+            ⭐ View Extension on GitHub
           </Link>
         </div>
       </div>
@@ -239,7 +239,7 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title="hckr — Developer Utility Toolkit"
+      title="hckr-tools — Developer Utility Toolkit"
       description="Offline-first Chrome extension delivering developer utilities in your browser side panel."
     >
       <HeroBanner />

@@ -3,7 +3,7 @@ const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'hckr tools',
+  title: 'hckr-tools',
   tagline: 'Lightning-fast, offline-first developer utilities right in your browser side panel.',
   favicon: 'img/logo.svg',
   url: 'https://hckr-tools.github.io',
@@ -12,8 +12,12 @@ const config = {
   projectName: 'hckr-tools.github.io',
   trailingSlash: true,
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
-  markdown: { mermaid: true },
+  markdown: {
+    mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   presets: [
     [
       'classic',
@@ -58,8 +62,8 @@ const config = {
       },
     },
     navbar: {
-      title: 'hckr',
-      logo: { alt: 'hckr logo', src: 'img/logo.svg', href: '/' },
+      title: 'hckr-tools',
+      logo: { alt: 'hckr-tools logo', src: 'img/logo.svg', href: '/' },
       items: [
         {
           type: 'docSidebar',
@@ -74,7 +78,7 @@ const config = {
           activeBaseRegex: '^/devdocs/',
         },
         {
-          href: 'https://github.com/hckr-tools/hckr-browser-ext',
+          href: 'https://github.com/hckr-tools/hckr-tools-browser-extension',
           label: 'Extension Repo',
           position: 'right',
         },
@@ -113,9 +117,9 @@ const config = {
         {
           title: 'Community & Code',
           items: [
-            { label: 'Extension GitHub', href: 'https://github.com/hckr-tools/hckr-browser-ext' },
+            { label: 'Extension GitHub', href: 'https://github.com/hckr-tools/hckr-tools-browser-extension' },
             { label: 'Portal GitHub', href: 'https://github.com/hckr-tools/hckr-tools.github.io' },
-            { label: 'Report an Issue', href: 'https://github.com/hckr-tools/hckr-browser-ext/issues' },
+            { label: 'Report an Issue', href: 'https://github.com/hckr-tools/hckr-tools-browser-extension/issues' },
           ],
         },
       ],

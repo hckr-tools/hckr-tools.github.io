@@ -24,7 +24,7 @@ To test the extension locally in Google Chrome or any Chromium-based browser (Br
 
 4. **Load Unpacked**:
    - Click the **Load unpacked** button in the top-left toolbar.
-   - Select the `dist/` directory inside this repository (`/path/to/hckr-browser-ext/dist`).
+   - Select the `dist/` directory inside this repository (`/path/to/hckr-tools-browser-extension/dist`).
 
 5. **Pin and Open**:
    - Click the Puzzle icon in Chrome's toolbar to find **hckr — Dev Toolkit**.

@@ -20,8 +20,8 @@ If you are developing features or testing the latest unreleased builds:
 
 1. Clone the extension repository:
    ```bash
-   git clone https://github.com/hckr-tools/hckr-browser-ext.git
-   cd hckr-browser-ext
+   git clone https://github.com/hckr-tools/hckr-tools-browser-extension.git
+   cd hckr-tools-browser-extension
    ```
 2. Install dependencies and compile:
    ```bash

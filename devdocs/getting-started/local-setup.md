@@ -10,7 +10,7 @@ Detailed breakdown of project dependencies, folder structure, and editor configu
 ## Repository Layout
 
 ```
-hckr-browser-ext/
+hckr-tools-browser-extension/
 ├── Makefile                # Developer task automation
 ├── package.json            # Root project metadata and scripts
 ├── vite.config.ts          # Vite multi-entry build configuration

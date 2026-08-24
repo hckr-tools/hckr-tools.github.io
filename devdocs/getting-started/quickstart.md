@@ -19,8 +19,8 @@ Get up and running with `hckr` development in under 2 minutes.
 
 ```bash
 # Clone the repository
-git clone https://github.com/pateash/hckr-browser-ext.git
-cd hckr-browser-ext
+git clone https://github.com/hckr-tools/hckr-tools-browser-extension.git
+cd hckr-tools-browser-extension
 
 # Install root dependencies
 make install
