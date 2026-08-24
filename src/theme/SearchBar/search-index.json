@@ -1,0 +1,902 @@
+[
+  {
+    "title": "Welcome to hckr",
+    "heading": "",
+    "content": "Welcome to hckr ⚡ hckr is an offline-first developer utility toolkit built directly into your Chrome browser side panel. Stop pasting sensitive tokens, JSON payloads, and credentials into random online web formatters.",
+    "path": "/docs/"
+  },
+  {
+    "title": "Welcome to hckr",
+    "heading": "Why hckr?",
+    "content": "Why hckr? - 🔒 100% Offline & Private : Zero analytics, zero telemetries, and zero network calls. All computations run in-memory within your browser process. - ⚡ Sidepanel Native : Stays docked alongside your code editor, postman, terminal, or browser tab without obscuring your view. - 🧠 Context-Aware Detection : Highlight text on any page (JWT, Epoch timestamp, Base64 string, JSON blob) to automatically inspect or decode it in the sidepanel. - 🚀 12+ Essential Tools : JSON formatting & filtering, JWT debugging, Unix timestamps, Regex testing with live highlights, Diff checking, and much more.",
+    "path": "/docs/"
+  },
+  {
+    "title": "Welcome to hckr",
+    "heading": "Quick Links",
+    "content": "Quick Links - $1 - $1 - $1 - $1 - $1",
+    "path": "/docs/"
+  },
+  {
+    "title": "Installation",
+    "heading": "",
+    "content": "Installing hckr You can install hckr from the Chrome Web Store or run it as an unpacked developer extension.",
+    "path": "/docs/installation/"
+  },
+  {
+    "title": "Installation",
+    "heading": "Method 1: Chrome Web Store (Recommended)",
+    "content": "Method 1: Chrome Web Store (Recommended) 1. Open the $1. 2. Search for hckr . 3. Click Add to Chrome . 4. Pin the extension icon to your toolbar for instant 1-click sidepanel access.",
+    "path": "/docs/installation/"
+  },
+  {
+    "title": "Installation",
+    "heading": "Method 2: Load Unpacked (From Source)",
+    "content": "Method 2: Load Unpacked (From Source) If you are developing features or testing the latest unreleased builds: 1. Clone the extension repository: 2. Install dependencies and compile: 3. Open Chrome and navigate to chrome://extensions/ . 4. Toggle Developer mode in the top-right corner. 5. Click Load unpacked and select the dist/ directory inside the repository. 6. The extension is now active in your browser.",
+    "path": "/docs/installation/"
+  },
+  {
+    "title": "Keyboard Shortcuts",
+    "heading": "",
+    "content": "Keyboard Shortcuts hckr is optimized for rapid keyboard-driven developer workflows.",
+    "path": "/docs/keyboard-shortcuts/"
+  },
+  {
+    "title": "Keyboard Shortcuts",
+    "heading": "Global Shortcuts",
+    "content": "Global Shortcuts Shortcut macOS Windows / Linux Action :--- :--- :--- :--- Open Sidepanel <kbd Cmd</kbd + <kbd Shift</kbd + <kbd H</kbd <kbd Ctrl</kbd + <kbd Shift</kbd + <kbd H</kbd Toggle the hckr side panel Quick Tool Search <kbd Cmd</kbd + <kbd K</kbd <kbd Ctrl</kbd + <kbd K</kbd Open the tool launcher palette Copy Output <kbd Cmd</kbd + <kbd Shift</kbd + <kbd C</kbd <kbd Ctrl</kbd + <kbd Shift</kbd + <kbd C</kbd Copy the active tool result to clipboard Clear Input <kbd Cmd</kbd + <kbd Shift</kbd + <kbd X</kbd <kbd Ctrl</kbd + <kbd Shift</kbd + <kbd X</kbd Clear current input buffer",
+    "path": "/docs/keyboard-shortcuts/"
+  },
+  {
+    "title": "Keyboard Shortcuts",
+    "heading": "Customizing Keybindings",
+    "content": "Customizing Keybindings You can customize the shortcut to trigger the hckr side panel at any time: 1. Open chrome://extensions/shortcuts in Google Chrome. 2. Scroll to hckr — Developer Utility Toolkit . 3. Click the pencil icon next to Activate the extension and set your desired key sequence.",
+    "path": "/docs/keyboard-shortcuts/"
+  },
+  {
+    "title": "Privacy Policy",
+    "heading": "",
+    "content": "Privacy Policy & Security Guarantee hckr was built on a simple principle: Your data is yours alone.",
+    "path": "/docs/privacy-policy/"
+  },
+  {
+    "title": "Privacy Policy",
+    "heading": "🛡️ Zero Data Collection",
+    "content": "🛡️ Zero Data Collection - No Remote Servers : The extension communicates with NO backend servers or remote APIs. - No Analytics / Telemetry : We do not include Google Analytics, Sentry, Mixpanel, or any tracking SDKs. - Local In-Memory Execution : Every operation (JSON parsing, JWT decoding, Hash generation, Regex evaluation) executes locally inside your browser sandbox. - Offline Capable : hckr works 100% offline without an active internet connection.",
+    "path": "/docs/privacy-policy/"
+  },
+  {
+    "title": "Privacy Policy",
+    "heading": "🔑 Permissions Justification",
+    "content": "🔑 Permissions Justification Permission Reason :--- :--- sidePanel Used to display the responsive sidepanel UI alongside your web pages. storage Saves your local UI preferences (selected tool, theme, tab states) on your machine. contextMenus Allows right-clicking selected text to send it directly into the relevant tool. activeTab Used only when you trigger selection actions from the context menu on an active page.",
+    "path": "/docs/privacy-policy/"
+  },
+  {
+    "title": "Base64 Encoder / Decoder",
+    "heading": "",
+    "content": "Base64 Encoder / Decoder Convert text or byte streams to and from Base64 and URL-Safe Base64 format.",
+    "path": "/docs/tools/base64/"
+  },
+  {
+    "title": "Base64 Encoder / Decoder",
+    "heading": "Overview",
+    "content": "Overview The Base64 Encoder / Decoder runs entirely inside your browser side panel. No data is transmitted over the network, making it safe for proprietary tokens, logs, and sensitive payloads.",
+    "path": "/docs/tools/base64/"
+  },
+  {
+    "title": "Base64 Encoder / Decoder",
+    "heading": "Key Features",
+    "content": "Key Features - Instant Results : Live evaluation as you type or paste. - 1-Click Copy : Fast clipboard integration with feedback. - Smart Formatting : Handles edge cases, invalid inputs, and whitespace automatically. - Dark Mode Native : Seamlessly matches your browser and system preferences.",
+    "path": "/docs/tools/base64/"
+  },
+  {
+    "title": "Base64 Encoder / Decoder",
+    "heading": "Usage Guide",
+    "content": "Usage Guide 1. Open the hckr side panel (<kbd Cmd</kbd +<kbd Shift</kbd +<kbd H</kbd on macOS / <kbd Ctrl</kbd +<kbd Shift</kbd +<kbd H</kbd on Windows). 2. Select Base64 Encoder / Decoder from the sidebar or press <kbd Cmd</kbd +<kbd K</kbd to quick-search. 3. Paste or type your input in the editor. 4. Copy the result directly to your clipboard.",
+    "path": "/docs/tools/base64/"
+  },
+  {
+    "title": "Diff Checker",
+    "heading": "",
+    "content": "Diff Checker Compare two blocks of code or text with unified and side-by-side visual diffs.",
+    "path": "/docs/tools/diff-checker/"
+  },
+  {
+    "title": "Diff Checker",
+    "heading": "Overview",
+    "content": "Overview The Diff Checker runs entirely inside your browser side panel. No data is transmitted over the network, making it safe for proprietary tokens, logs, and sensitive payloads.",
+    "path": "/docs/tools/diff-checker/"
+  },
+  {
+    "title": "Diff Checker",
+    "heading": "Key Features",
+    "content": "Key Features - Instant Results : Live evaluation as you type or paste. - 1-Click Copy : Fast clipboard integration with feedback. - Smart Formatting : Handles edge cases, invalid inputs, and whitespace automatically. - Dark Mode Native : Seamlessly matches your browser and system preferences.",
+    "path": "/docs/tools/diff-checker/"
+  },
+  {
+    "title": "Diff Checker",
+    "heading": "Usage Guide",
+    "content": "Usage Guide 1. Open the hckr side panel (<kbd Cmd</kbd +<kbd Shift</kbd +<kbd H</kbd on macOS / <kbd Ctrl</kbd +<kbd Shift</kbd +<kbd H</kbd on Windows). 2. Select Diff Checker from the sidebar or press <kbd Cmd</kbd +<kbd K</kbd to quick-search. 3. Paste or type your input in the editor. 4. Copy the result directly to your clipboard.",
+    "path": "/docs/tools/diff-checker/"
+  },
+  {
+    "title": "Dummy Data Generator",
+    "heading": "",
+    "content": "Dummy Data Generator Generate synthetic test datasets in JSON, CSV, or SQL formats.",
+    "path": "/docs/tools/dummy-data/"
+  },
+  {
+    "title": "Dummy Data Generator",
+    "heading": "Overview",
+    "content": "Overview The Dummy Data Generator runs entirely inside your browser side panel. No data is transmitted over the network, making it safe for proprietary tokens, logs, and sensitive payloads.",
+    "path": "/docs/tools/dummy-data/"
+  },
+  {
+    "title": "Dummy Data Generator",
+    "heading": "Key Features",
+    "content": "Key Features - Instant Results : Live evaluation as you type or paste. - 1-Click Copy : Fast clipboard integration with feedback. - Smart Formatting : Handles edge cases, invalid inputs, and whitespace automatically. - Dark Mode Native : Seamlessly matches your browser and system preferences.",
+    "path": "/docs/tools/dummy-data/"
+  },
+  {
+    "title": "Dummy Data Generator",
+    "heading": "Usage Guide",
+    "content": "Usage Guide 1. Open the hckr side panel (<kbd Cmd</kbd +<kbd Shift</kbd +<kbd H</kbd on macOS / <kbd Ctrl</kbd +<kbd Shift</kbd +<kbd H</kbd on Windows). 2. Select Dummy Data Generator from the sidebar or press <kbd Cmd</kbd +<kbd K</kbd to quick-search. 3. Paste or type your input in the editor. 4. Copy the result directly to your clipboard.",
+    "path": "/docs/tools/dummy-data/"
+  },
+  {
+    "title": "Hash Generator",
+    "heading": "",
+    "content": "Hash Generator Compute cryptographic hashes (MD5, SHA-256, SHA-512, HMAC) locally in your browser.",
+    "path": "/docs/tools/hash-generator/"
+  },
+  {
+    "title": "Hash Generator",
+    "heading": "Overview",
+    "content": "Overview The Hash Generator runs entirely inside your browser side panel. No data is transmitted over the network, making it safe for proprietary tokens, logs, and sensitive payloads.",
+    "path": "/docs/tools/hash-generator/"
+  },
+  {
+    "title": "Hash Generator",
+    "heading": "Key Features",
+    "content": "Key Features - Instant Results : Live evaluation as you type or paste. - 1-Click Copy : Fast clipboard integration with feedback. - Smart Formatting : Handles edge cases, invalid inputs, and whitespace automatically. - Dark Mode Native : Seamlessly matches your browser and system preferences.",
+    "path": "/docs/tools/hash-generator/"
+  },
+  {
+    "title": "Hash Generator",
+    "heading": "Usage Guide",
+    "content": "Usage Guide 1. Open the hckr side panel (<kbd Cmd</kbd +<kbd Shift</kbd +<kbd H</kbd on macOS / <kbd Ctrl</kbd +<kbd Shift</kbd +<kbd H</kbd on Windows). 2. Select Hash Generator from the sidebar or press <kbd Cmd</kbd +<kbd K</kbd to quick-search. 3. Paste or type your input in the editor. 4. Copy the result directly to your clipboard.",
+    "path": "/docs/tools/hash-generator/"
+  },
+  {
+    "title": "JSON Formatter & Validator",
+    "heading": "",
+    "content": "JSON Formatter & Validator Format, validate, repair, and query complex JSON structures.",
+    "path": "/docs/tools/json-formatter/"
+  },
+  {
+    "title": "JSON Formatter & Validator",
+    "heading": "Overview",
+    "content": "Overview The JSON Formatter & Validator runs entirely inside your browser side panel. No data is transmitted over the network, making it safe for proprietary tokens, logs, and sensitive payloads.",
+    "path": "/docs/tools/json-formatter/"
+  },
+  {
+    "title": "JSON Formatter & Validator",
+    "heading": "Key Features",
+    "content": "Key Features - Instant Results : Live evaluation as you type or paste. - 1-Click Copy : Fast clipboard integration with feedback. - Smart Formatting : Handles edge cases, invalid inputs, and whitespace automatically. - Dark Mode Native : Seamlessly matches your browser and system preferences.",
+    "path": "/docs/tools/json-formatter/"
+  },
+  {
+    "title": "JSON Formatter & Validator",
+    "heading": "Usage Guide",
+    "content": "Usage Guide 1. Open the hckr side panel (<kbd Cmd</kbd +<kbd Shift</kbd +<kbd H</kbd on macOS / <kbd Ctrl</kbd +<kbd Shift</kbd +<kbd H</kbd on Windows). 2. Select JSON Formatter & Validator from the sidebar or press <kbd Cmd</kbd +<kbd K</kbd to quick-search. 3. Paste or type your input in the editor. 4. Copy the result directly to your clipboard.",
+    "path": "/docs/tools/json-formatter/"
+  },
+  {
+    "title": "JWT Token Decoder",
+    "heading": "",
+    "content": "JWT Token Decoder Decode and inspect JSON Web Tokens (JWT) claims, headers, and expiration dates.",
+    "path": "/docs/tools/jwt-decoder/"
+  },
+  {
+    "title": "JWT Token Decoder",
+    "heading": "Overview",
+    "content": "Overview The JWT Token Decoder runs entirely inside your browser side panel. No data is transmitted over the network, making it safe for proprietary tokens, logs, and sensitive payloads.",
+    "path": "/docs/tools/jwt-decoder/"
+  },
+  {
+    "title": "JWT Token Decoder",
+    "heading": "Key Features",
+    "content": "Key Features - Instant Results : Live evaluation as you type or paste. - 1-Click Copy : Fast clipboard integration with feedback. - Smart Formatting : Handles edge cases, invalid inputs, and whitespace automatically. - Dark Mode Native : Seamlessly matches your browser and system preferences.",
+    "path": "/docs/tools/jwt-decoder/"
+  },
+  {
+    "title": "JWT Token Decoder",
+    "heading": "Usage Guide",
+    "content": "Usage Guide 1. Open the hckr side panel (<kbd Cmd</kbd +<kbd Shift</kbd +<kbd H</kbd on macOS / <kbd Ctrl</kbd +<kbd Shift</kbd +<kbd H</kbd on Windows). 2. Select JWT Token Decoder from the sidebar or press <kbd Cmd</kbd +<kbd K</kbd to quick-search. 3. Paste or type your input in the editor. 4. Copy the result directly to your clipboard.",
+    "path": "/docs/tools/jwt-decoder/"
+  },
+  {
+    "title": "Markdown Live Previewer",
+    "heading": "",
+    "content": "Markdown Live Previewer Preview GitHub-Flavored Markdown documents with syntax-highlighted code blocks.",
+    "path": "/docs/tools/markdown-preview/"
+  },
+  {
+    "title": "Markdown Live Previewer",
+    "heading": "Overview",
+    "content": "Overview The Markdown Live Previewer runs entirely inside your browser side panel. No data is transmitted over the network, making it safe for proprietary tokens, logs, and sensitive payloads.",
+    "path": "/docs/tools/markdown-preview/"
+  },
+  {
+    "title": "Markdown Live Previewer",
+    "heading": "Key Features",
+    "content": "Key Features - Instant Results : Live evaluation as you type or paste. - 1-Click Copy : Fast clipboard integration with feedback. - Smart Formatting : Handles edge cases, invalid inputs, and whitespace automatically. - Dark Mode Native : Seamlessly matches your browser and system preferences.",
+    "path": "/docs/tools/markdown-preview/"
+  },
+  {
+    "title": "Markdown Live Previewer",
+    "heading": "Usage Guide",
+    "content": "Usage Guide 1. Open the hckr side panel (<kbd Cmd</kbd +<kbd Shift</kbd +<kbd H</kbd on macOS / <kbd Ctrl</kbd +<kbd Shift</kbd +<kbd H</kbd on Windows). 2. Select Markdown Live Previewer from the sidebar or press <kbd Cmd</kbd +<kbd K</kbd to quick-search. 3. Paste or type your input in the editor. 4. Copy the result directly to your clipboard.",
+    "path": "/docs/tools/markdown-preview/"
+  },
+  {
+    "title": "Tools Overview",
+    "heading": "",
+    "content": "Tools Catalog Overview hckr bundles a comprehensive suite of utilities for daily software engineering: Tool Category Key Capabilities :--- :--- :--- $1 Data Format, minify, repair trailing commas, evaluate JMESPath / JSONPath $1 Security Decode header/payload, inspect claims, humanize epoch expiration $1 Encoding Standard & URL-safe Base64, hex & text conversion $1 Encoding Full URL component encoding/decoding, query param breakdown $1 Security MD5, SHA-1, SHA-256, SHA-512, HMAC with live typing $1 Generators v1, v4, v7 UUIDs, NanoID, bulk generation with custom separators $1 Time Seconds/milliseconds epoch conversion, relative time, ISO-8601, timezone matrix $1 Text Side-by-side & unified diff viewer with word-level changes $1 Text Live matching, capture group inspector, regex cheat sheet $1 Generators Generate mock JSON, SQL, or CSV datasets (names, emails, addresses, UUIDs) $1 Text Live GitHub Flavored Markdown renderer with table & code highlight support",
+    "path": "/docs/tools/overview/"
+  },
+  {
+    "title": "Regular Expression Tester",
+    "heading": "",
+    "content": "Regular Expression Tester Test regular expressions with real-time match highlighting and capture group breakdowns.",
+    "path": "/docs/tools/regex-tester/"
+  },
+  {
+    "title": "Regular Expression Tester",
+    "heading": "Overview",
+    "content": "Overview The Regular Expression Tester runs entirely inside your browser side panel. No data is transmitted over the network, making it safe for proprietary tokens, logs, and sensitive payloads.",
+    "path": "/docs/tools/regex-tester/"
+  },
+  {
+    "title": "Regular Expression Tester",
+    "heading": "Key Features",
+    "content": "Key Features - Instant Results : Live evaluation as you type or paste. - 1-Click Copy : Fast clipboard integration with feedback. - Smart Formatting : Handles edge cases, invalid inputs, and whitespace automatically. - Dark Mode Native : Seamlessly matches your browser and system preferences.",
+    "path": "/docs/tools/regex-tester/"
+  },
+  {
+    "title": "Regular Expression Tester",
+    "heading": "Usage Guide",
+    "content": "Usage Guide 1. Open the hckr side panel (<kbd Cmd</kbd +<kbd Shift</kbd +<kbd H</kbd on macOS / <kbd Ctrl</kbd +<kbd Shift</kbd +<kbd H</kbd on Windows). 2. Select Regular Expression Tester from the sidebar or press <kbd Cmd</kbd +<kbd K</kbd to quick-search. 3. Paste or type your input in the editor. 4. Copy the result directly to your clipboard.",
+    "path": "/docs/tools/regex-tester/"
+  },
+  {
+    "title": "Timestamp Converter",
+    "heading": "",
+    "content": "Timestamp Converter Convert Unix Epoch timestamps (seconds & milliseconds) to human-readable dates and multiple timezones.",
+    "path": "/docs/tools/timestamp-converter/"
+  },
+  {
+    "title": "Timestamp Converter",
+    "heading": "Overview",
+    "content": "Overview The Timestamp Converter runs entirely inside your browser side panel. No data is transmitted over the network, making it safe for proprietary tokens, logs, and sensitive payloads.",
+    "path": "/docs/tools/timestamp-converter/"
+  },
+  {
+    "title": "Timestamp Converter",
+    "heading": "Key Features",
+    "content": "Key Features - Instant Results : Live evaluation as you type or paste. - 1-Click Copy : Fast clipboard integration with feedback. - Smart Formatting : Handles edge cases, invalid inputs, and whitespace automatically. - Dark Mode Native : Seamlessly matches your browser and system preferences.",
+    "path": "/docs/tools/timestamp-converter/"
+  },
+  {
+    "title": "Timestamp Converter",
+    "heading": "Usage Guide",
+    "content": "Usage Guide 1. Open the hckr side panel (<kbd Cmd</kbd +<kbd Shift</kbd +<kbd H</kbd on macOS / <kbd Ctrl</kbd +<kbd Shift</kbd +<kbd H</kbd on Windows). 2. Select Timestamp Converter from the sidebar or press <kbd Cmd</kbd +<kbd K</kbd to quick-search. 3. Paste or type your input in the editor. 4. Copy the result directly to your clipboard.",
+    "path": "/docs/tools/timestamp-converter/"
+  },
+  {
+    "title": "URL Encoder / Decoder",
+    "heading": "",
+    "content": "URL Encoder / Decoder Encode or decode query strings and parse complex URL structures.",
+    "path": "/docs/tools/url-encoder/"
+  },
+  {
+    "title": "URL Encoder / Decoder",
+    "heading": "Overview",
+    "content": "Overview The URL Encoder / Decoder runs entirely inside your browser side panel. No data is transmitted over the network, making it safe for proprietary tokens, logs, and sensitive payloads.",
+    "path": "/docs/tools/url-encoder/"
+  },
+  {
+    "title": "URL Encoder / Decoder",
+    "heading": "Key Features",
+    "content": "Key Features - Instant Results : Live evaluation as you type or paste. - 1-Click Copy : Fast clipboard integration with feedback. - Smart Formatting : Handles edge cases, invalid inputs, and whitespace automatically. - Dark Mode Native : Seamlessly matches your browser and system preferences.",
+    "path": "/docs/tools/url-encoder/"
+  },
+  {
+    "title": "URL Encoder / Decoder",
+    "heading": "Usage Guide",
+    "content": "Usage Guide 1. Open the hckr side panel (<kbd Cmd</kbd +<kbd Shift</kbd +<kbd H</kbd on macOS / <kbd Ctrl</kbd +<kbd Shift</kbd +<kbd H</kbd on Windows). 2. Select URL Encoder / Decoder from the sidebar or press <kbd Cmd</kbd +<kbd K</kbd to quick-search. 3. Paste or type your input in the editor. 4. Copy the result directly to your clipboard.",
+    "path": "/docs/tools/url-encoder/"
+  },
+  {
+    "title": "UUID / ID Generator",
+    "heading": "",
+    "content": "UUID / ID Generator Generate v4, v7 UUIDs, NanoIDs, and custom identifiers in bulk.",
+    "path": "/docs/tools/uuid-generator/"
+  },
+  {
+    "title": "UUID / ID Generator",
+    "heading": "Overview",
+    "content": "Overview The UUID / ID Generator runs entirely inside your browser side panel. No data is transmitted over the network, making it safe for proprietary tokens, logs, and sensitive payloads.",
+    "path": "/docs/tools/uuid-generator/"
+  },
+  {
+    "title": "UUID / ID Generator",
+    "heading": "Key Features",
+    "content": "Key Features - Instant Results : Live evaluation as you type or paste. - 1-Click Copy : Fast clipboard integration with feedback. - Smart Formatting : Handles edge cases, invalid inputs, and whitespace automatically. - Dark Mode Native : Seamlessly matches your browser and system preferences.",
+    "path": "/docs/tools/uuid-generator/"
+  },
+  {
+    "title": "UUID / ID Generator",
+    "heading": "Usage Guide",
+    "content": "Usage Guide 1. Open the hckr side panel (<kbd Cmd</kbd +<kbd Shift</kbd +<kbd H</kbd on macOS / <kbd Ctrl</kbd +<kbd Shift</kbd +<kbd H</kbd on Windows). 2. Select UUID / ID Generator from the sidebar or press <kbd Cmd</kbd +<kbd K</kbd to quick-search. 3. Paste or type your input in the editor. 4. Copy the result directly to your clipboard.",
+    "path": "/docs/tools/uuid-generator/"
+  },
+  {
+    "title": "Content Scripts & Detector",
+    "heading": "",
+    "content": "🔍 Content Scripts & Detector The content script ( src/content/detector.ts and src/content/widget.css ) runs in the context of open webpages to identify developer data structures on the fly.",
+    "path": "/devdocs/architecture/content-scripts/"
+  },
+  {
+    "title": "Content Scripts & Detector",
+    "heading": "Token Detection Lifecycle",
+    "content": "Token Detection Lifecycle ---",
+    "path": "/devdocs/architecture/content-scripts/"
+  },
+  {
+    "title": "Content Scripts & Detector",
+    "heading": "Token Classifiers",
+    "content": "Token Classifiers 1. JSON Detector : Checks for balanced braces { ... } or [ ... ] and runs a fast parse check. 2. JWT Detector : Evaluates ^[A-Za-z0-9- =]+\\.[A-Za-z0-9- =]+\\.?[A-Za-z0-9- .+/=] $ structure. 3. Base64 String : Validates standard base64 alphabet with padding checks. 4. Unix Timestamp : Identifies 10-digit (seconds) or 13-digit (milliseconds) numerical strings within reasonable epoch boundaries. ---",
+    "path": "/devdocs/architecture/content-scripts/"
+  },
+  {
+    "title": "Content Scripts & Detector",
+    "heading": "Non-Intrusive Widget Styling",
+    "content": "Non-Intrusive Widget Styling The badge is injected inside a Shadow DOM or scoped container with widget.css to prevent conflicts with host page styles, featuring: - Z-index safety - Auto-dismiss on click outside or document scroll - Keyboard dismiss via Escape",
+    "path": "/devdocs/architecture/content-scripts/"
+  },
+  {
+    "title": "Manifest V3 Compliance",
+    "heading": "",
+    "content": "📜 Manifest V3 Compliance hckr is built natively against Chrome's Manifest V3 specifications, guaranteeing maximum privacy, security, and performance.",
+    "path": "/devdocs/architecture/manifest-v3/"
+  },
+  {
+    "title": "Manifest V3 Compliance",
+    "heading": "public/manifest.json Reference",
+    "content": "public/manifest.json Reference ---",
+    "path": "/devdocs/architecture/manifest-v3/"
+  },
+  {
+    "title": "Manifest V3 Compliance",
+    "heading": "Permissions Breakdown",
+    "content": "Permissions Breakdown Permission Purpose & Justification :--- :--- storage Local client-side caching of tool preferences, last active tool, and non-sensitive drafts. Data never leaves the browser. contextMenus Registers right-click menu items (\"Send to JSON Formatter\", \"Decode JWT\", \"Base64 Decode\") for fast selection processing. tabs Required for tracking tab focus transitions to support the Alt+Q fast previous tab toggle. activeTab Grants temporary context access to the active tab when triggered via extension actions. ---",
+    "path": "/devdocs/architecture/manifest-v3/"
+  },
+  {
+    "title": "Manifest V3 Compliance",
+    "heading": "Content Security Policy (CSP)",
+    "content": "Content Security Policy (CSP) MV3 forbids arbitrary string execution ( eval() , new Function() ) and remote script loading. All libraries used within hckr (crypto, formatters, diff algorithms) are statically compiled into the local distribution bundle, requiring no external CDNs or network fetches.",
+    "path": "/devdocs/architecture/manifest-v3/"
+  },
+  {
+    "title": "Messaging & IPC Protocol",
+    "heading": "",
+    "content": "💬 Messaging & IPC Protocol Chrome extensions isolate execution contexts (Content Scripts, Service Worker, Side Panel). Communication flows through type-safe message envelopes.",
+    "path": "/devdocs/architecture/messaging-protocol/"
+  },
+  {
+    "title": "Messaging & IPC Protocol",
+    "heading": "Message Schemas",
+    "content": "Message Schemas All message types are defined under src/shared/types.ts : ---",
+    "path": "/devdocs/architecture/messaging-protocol/"
+  },
+  {
+    "title": "Messaging & IPC Protocol",
+    "heading": "Message Flow Diagram",
+    "content": "Message Flow Diagram ---",
+    "path": "/devdocs/architecture/messaging-protocol/"
+  },
+  {
+    "title": "Messaging & IPC Protocol",
+    "heading": "Storage vs. Direct Port Dispatch",
+    "content": "Storage vs. Direct Port Dispatch - Direct Messages ( chrome.runtime.sendMessage ) : Used when the side panel is currently mounted and active. - Session Storage ( chrome.storage.session ) : Used as a fallback when the sidepanel is closed. The service worker persists the pending payload, calls chrome.sidePanel.open() , and the side panel consumes the pending payload upon mount.",
+    "path": "/devdocs/architecture/messaging-protocol/"
+  },
+  {
+    "title": "Architecture Overview",
+    "heading": "",
+    "content": "🏛️ Architecture Overview The hckr browser extension is built strictly on Chrome Extensions Manifest V3 (MV3) APIs and utilizes a modern modular React + Vite architecture.",
+    "path": "/devdocs/architecture/overview/"
+  },
+  {
+    "title": "Architecture Overview",
+    "heading": "System Topology",
+    "content": "System Topology ---",
+    "path": "/devdocs/architecture/overview/"
+  },
+  {
+    "title": "Architecture Overview",
+    "heading": "Key Modules",
+    "content": "Key Modules 1. Side Panel Application ( src/sidepanel/ ) - Built with React 18 and standard CSS modules. - Docked side panel UI that stays open alongside web development workflows. - Contains the tool registry with 11 specialized utilities. - Quick navigation search bar to switch tools with fuzzy matching. 2. Background Service Worker ( src/service-worker.ts ) - Stateless background worker spawned on-demand by Chrome. - Manages chrome.contextMenus for sending highlighted text directly to formatting/decoding tools. - Tracks active tab history for Alt+Q fast tab switching command. - Controls sidepanel open/close behavior. 3. Content Detector Script ( src/content/ ) - Injected on document idle across web pages. - Inspects user text selection or page content to detect strings matching: - JSON objects and arrays - JWT authorization tokens ( ey... ) - Base64 encoded strings - Unix timestamps (seconds & milliseconds) - Displays a small floating non-intrusive action badge allowing instant 1-cl",
+    "path": "/devdocs/architecture/overview/"
+  },
+  {
+    "title": "Service Worker Internals",
+    "heading": "",
+    "content": "⚙️ Service Worker Internals The background script in src/service-worker.ts acts as the event-driven coordinator for the entire extension lifecycle.",
+    "path": "/devdocs/architecture/service-worker/"
+  },
+  {
+    "title": "Service Worker Internals",
+    "heading": "Responsibilities",
+    "content": "Responsibilities ---",
+    "path": "/devdocs/architecture/service-worker/"
+  },
+  {
+    "title": "Service Worker Internals",
+    "heading": "1. Context Menus Management",
+    "content": "1. Context Menus Management On chrome.runtime.onInstalled , the service worker sets up contextual items: When clicked, the payload is forwarded to the active tab's side panel via storage or runtime messaging. ---",
+    "path": "/devdocs/architecture/service-worker/"
+  },
+  {
+    "title": "Service Worker Internals",
+    "heading": "2. Fast Tab Switching ( Alt+Q )",
+    "content": "2. Fast Tab Switching ( Alt+Q ) Tracks the user's active tab transitions using a 2-element stack: ---",
+    "path": "/devdocs/architecture/service-worker/"
+  },
+  {
+    "title": "Service Worker Internals",
+    "heading": "3. Side Panel Trigger",
+    "content": "3. Side Panel Trigger On clicking the extension toolbar icon ( chrome.action.onClicked ):",
+    "path": "/devdocs/architecture/service-worker/"
+  },
+  {
+    "title": "Sidepanel UI Architecture",
+    "heading": "",
+    "content": "🖥️ Sidepanel UI Architecture The side panel UI ( src/sidepanel/ ) is a single-page React 18 application docked directly into Google Chrome's native side panel container.",
+    "path": "/devdocs/architecture/sidepanel/"
+  },
+  {
+    "title": "Sidepanel UI Architecture",
+    "heading": "Component Hierarchy",
+    "content": "Component Hierarchy ---",
+    "path": "/devdocs/architecture/sidepanel/"
+  },
+  {
+    "title": "Sidepanel UI Architecture",
+    "heading": "State Persistence",
+    "content": "State Persistence Active tool state and text inputs persist in chrome.storage.local or session memory: - When switching between tools, the active tab preserves drafts and output states. - The last active tool ID is stored under key hckr last tool so reopening the side panel returns directly to the developer's previous task. ---",
+    "path": "/devdocs/architecture/sidepanel/"
+  },
+  {
+    "title": "Sidepanel UI Architecture",
+    "heading": "Theming & Design System",
+    "content": "Theming & Design System The application uses CSS custom properties defined in src/sidepanel/styles/ with a high-contrast dark cyberpunk palette: - Backgrounds : 0d1117 , 161b22 , 21262d - Accents : Neon Cyan ( 00e5ff ), Emerald ( 00f08a ), Magenta ( f72585 ) - Typography : Monospace default for all inputs, outputs, and diff displays. - Copy Utility : Built-in clipboard helper with instant animated feedback badge.",
+    "path": "/devdocs/architecture/sidepanel/"
+  },
+  {
+    "title": "Loading Unpacked Extension",
+    "heading": "",
+    "content": "🔌 Loading the Unpacked Extension in Chrome To test the extension locally in Google Chrome or any Chromium-based browser (Brave, Edge, Arc):",
+    "path": "/devdocs/getting-started/loading-unpacked/"
+  },
+  {
+    "title": "Loading Unpacked Extension",
+    "heading": "Step-by-Step Instructions",
+    "content": "Step-by-Step Instructions 1. Build the extension : Ensure the dist/ directory exists and contains manifest.json , service-worker.js , and content/ . 2. Open Extensions Manager in Chrome : - Navigate to chrome://extensions in your address bar. - Or open the Chrome Menu ( ⋮ ) - Extensions - Manage Extensions . 3. Enable Developer Mode : - Toggle the Developer mode switch in the top-right corner of chrome://extensions . 4. Load Unpacked : - Click the Load unpacked button in the top-left toolbar. - Select the dist/ directory inside this repository ( /path/to/hckr-browser-ext/dist ). 5. Pin and Open : - Click the Puzzle icon in Chrome's toolbar to find hckr — Dev Toolkit . - Pin it to the toolbar for 1-click access to the Side Panel.",
+    "path": "/devdocs/getting-started/loading-unpacked/"
+  },
+  {
+    "title": "Loading Unpacked Extension",
+    "heading": "Reloading Changes",
+    "content": "Reloading Changes When running make dev , Vite will re-bundle files upon every save. To see changes in Chrome: - For Side Panel React code : Simply close and reopen the side panel, or right-click within the panel and click Inspect - Reload . - For Service Worker or Content Scripts : Click the Reload (↺) icon on the extension card in chrome://extensions .",
+    "path": "/devdocs/getting-started/loading-unpacked/"
+  },
+  {
+    "title": "Local Environment Setup",
+    "heading": "",
+    "content": "💻 Local Environment Setup Detailed breakdown of project dependencies, folder structure, and editor configuration.",
+    "path": "/devdocs/getting-started/local-setup/"
+  },
+  {
+    "title": "Local Environment Setup",
+    "heading": "Repository Layout",
+    "content": "Repository Layout",
+    "path": "/devdocs/getting-started/local-setup/"
+  },
+  {
+    "title": "Local Environment Setup",
+    "heading": "Recommended VS Code Extensions",
+    "content": "Recommended VS Code Extensions - Tailwind CSS IntelliSense / PostCSS plugins - Biome / ESLint & Prettier - Playwright Test for VSCode - MDX for DevDocs authoring",
+    "path": "/devdocs/getting-started/local-setup/"
+  },
+  {
+    "title": "Local Environment Setup",
+    "heading": "Node Scripts Overview",
+    "content": "Node Scripts Overview Command Description :--- :--- npm run dev Runs Vite in watch mode to automatically rebuild dist/ on code changes npm run build Runs tsc typecheck and full Vite bundle build with static asset copies npm run lint Runs tsc --noEmit to validate TypeScript strict mode without outputting files npm run test:e2e Runs headless Playwright browser tests against the loaded unpacked extension npm run zip Packages dist/ into hckr-extension.zip ready for store submission",
+    "path": "/devdocs/getting-started/local-setup/"
+  },
+  {
+    "title": "Quickstart Guide",
+    "heading": "",
+    "content": "🚀 Quickstart Guide Get up and running with hckr development in under 2 minutes.",
+    "path": "/devdocs/getting-started/quickstart/"
+  },
+  {
+    "title": "Quickstart Guide",
+    "heading": "Prerequisites",
+    "content": "Prerequisites - Node.js : v18.0.0+ (LTS recommended) - NPM : v9.0.0+ - Google Chrome : Version 114+ (for Side Panel API support) ---",
+    "path": "/devdocs/getting-started/quickstart/"
+  },
+  {
+    "title": "Quickstart Guide",
+    "heading": "1. Clone and Install",
+    "content": "1. Clone and Install ---",
+    "path": "/devdocs/getting-started/quickstart/"
+  },
+  {
+    "title": "Quickstart Guide",
+    "heading": "2. Build the Extension",
+    "content": "2. Build the Extension Run the watch build to compile TypeScript and bundle assets with Vite: This populates the dist/ directory with: - service-worker.js - content/detector.js & content/widget.css - src/sidepanel/index.html and bundled assets - manifest.json ---",
+    "path": "/devdocs/getting-started/quickstart/"
+  },
+  {
+    "title": "Quickstart Guide",
+    "heading": "3. Launch DevDocs Locally",
+    "content": "3. Launch DevDocs Locally To view this documentation site locally: Open $1 in your browser. ---",
+    "path": "/devdocs/getting-started/quickstart/"
+  },
+  {
+    "title": "Quickstart Guide",
+    "heading": "4. Run Verification Suite",
+    "content": "4. Run Verification Suite This runs TypeScript type checking ( make lint ), builds the production bundle ( make build ), and packages the distribution zip ( make zip ).",
+    "path": "/devdocs/getting-started/quickstart/"
+  },
+  {
+    "title": "Welcome to hckr DevDocs",
+    "heading": "",
+    "content": "hckr Developer Documentation Welcome to the internal engineering and architecture documentation for hckr — an offline, privacy-first Chrome Extension delivering 11 developer utilities right within your browser sidepanel and active webpages. ---",
+    "path": "/devdocs/"
+  },
+  {
+    "title": "Welcome to hckr DevDocs",
+    "heading": "⚡ Quick Navigation",
+    "content": "⚡ Quick Navigation Section Focus Area Key Docs :--- :--- :--- 🚀 Getting Started Setup, builds, and loading unpacked extension $1, $1 🏗️ Architecture & MV3 Service Worker, Sidepanel UI, Content Scripts, IPC $1, $1 🛠️ Tools Catalog 11 built-in developer tools and formatters $1, $1 🧪 Testing & Quality Playwright E2E testing and typechecking $1, $1 ⚡ Workflows & Commands Make targets, watch mode, tmux multi-pane dev $1, $1 📦 Release & Publish Chrome Web Store packaging and compliance $1, $1 ---",
+    "path": "/devdocs/"
+  },
+  {
+    "title": "Welcome to hckr DevDocs",
+    "heading": "🔒 Core Principles",
+    "content": "🔒 Core Principles 1. 100% Offline & Private : Zero external telemetry, zero analytics tracking, zero third-party network requests. All parsing, hashing, decoding, and formatting runs locally in the client. 2. Instant Accessibility : Docked side panel UI with instant keyboard access ( Alt+Q fast tab switching, context menus, and inline page token detection). 3. High Performance : Built with React 18 and Vite for sub-millisecond tab switching and minimal memory footprint.",
+    "path": "/devdocs/"
+  },
+  {
+    "title": "Chrome Web Store Submission",
+    "heading": "",
+    "content": "🚀 Chrome Web Store Submission Guidelines for submitting hckr updates to the Chrome Web Store Developer Dashboard.",
+    "path": "/devdocs/release/chrome-web-store/"
+  },
+  {
+    "title": "Chrome Web Store Submission",
+    "heading": "Pre-Flight Checklist",
+    "content": "Pre-Flight Checklist Before submitting a new version: - [ ] Bump version in package.json and public/manifest.json . - [ ] Run make verify and ensure all tests and builds pass. - [ ] Ensure hckr-extension.zip is freshly generated. - [ ] Verify that no remote scripts or external CDNs are referenced in the bundle. - [ ] Confirm privacy policy and offline operation descriptions. ---",
+    "path": "/devdocs/release/chrome-web-store/"
+  },
+  {
+    "title": "Chrome Web Store Submission",
+    "heading": "Submission Steps",
+    "content": "Submission Steps 1. Log in to the $1. 2. Select hckr — Dev Toolkit (or click New Item for initial submission). 3. Under the Package tab, upload hckr-extension.zip . 4. Review store listing details, screenshots (1280x800 or 640x400), and promotional graphics. 5. In the Privacy tab, verify permission justifications: - storage : \"Stores user preferences and local formatting drafts.\" - contextMenus : \"Adds right-click options to decode or format selected text.\" - tabs / activeTab : \"Supports quick keyboard shortcut to toggle to previously active tab.\" 6. Click Submit for Review .",
+    "path": "/devdocs/release/chrome-web-store/"
+  },
+  {
+    "title": "Packaging & Artifacts",
+    "heading": "",
+    "content": "📦 Packaging & Artifacts Generate distributable archive files for testing and submission.",
+    "path": "/devdocs/release/packaging/"
+  },
+  {
+    "title": "Packaging & Artifacts",
+    "heading": "Build and Zip Target",
+    "content": "Build and Zip Target",
+    "path": "/devdocs/release/packaging/"
+  },
+  {
+    "title": "Packaging & Artifacts",
+    "heading": "What Happens Under the Hood",
+    "content": "What Happens Under the Hood 1. Type Checking : Executes tsc --noEmit to verify type safety. 2. Vite Production Build : Compiles React app and scripts with minification and tree shaking to dist/ . 3. Asset Mirroring : Copies manifest.json and widget.css into dist/ . 4. Archive Generation : Creates hckr-extension.zip from the contents of dist/ .",
+    "path": "/devdocs/release/packaging/"
+  },
+  {
+    "title": "Packaging & Artifacts",
+    "heading": "Distribution Files",
+    "content": "Distribution Files - dist/ : Unpacked extension directory (for local developer loading). - hckr-extension.zip : Compressed zip file (for Chrome Web Store dashboard upload).",
+    "path": "/devdocs/release/packaging/"
+  },
+  {
+    "title": "E2E Testing with Playwright",
+    "heading": "",
+    "content": "🧪 E2E Testing with Playwright hckr uses Playwright to test extension behavior directly in a live Chromium browser instance with the unpacked extension loaded.",
+    "path": "/devdocs/testing/e2e-playwright/"
+  },
+  {
+    "title": "E2E Testing with Playwright",
+    "heading": "Test Runner Architecture",
+    "content": "Test Runner Architecture Chrome extensions require special browser context launch arguments ( --disable-extensions-except and --load-extension ): ---",
+    "path": "/devdocs/testing/e2e-playwright/"
+  },
+  {
+    "title": "E2E Testing with Playwright",
+    "heading": "Running Test Suites",
+    "content": "Running Test Suites ---",
+    "path": "/devdocs/testing/e2e-playwright/"
+  },
+  {
+    "title": "E2E Testing with Playwright",
+    "heading": "What We Test",
+    "content": "What We Test 1. Side Panel Mounting : Validates that all 11 tool tabs mount without runtime console exceptions. 2. Tool Functionality : Formatter parsing, JWT decoding, Base64 roundtrip encoding, Hash calculations, and UUID generation. 3. Content Script Injection : Tests selection badge triggers on mock test pages.",
+    "path": "/devdocs/testing/e2e-playwright/"
+  },
+  {
+    "title": "Type Checking & Static Analysis",
+    "heading": "",
+    "content": "🛡️ Type Checking & Static Analysis We enforce strict TypeScript typing across the extension frontend, service worker, content scripts, and tests.",
+    "path": "/devdocs/testing/linting/"
+  },
+  {
+    "title": "Type Checking & Static Analysis",
+    "heading": "Running Type Checks",
+    "content": "Running Type Checks This runs tsc --noEmit against tsconfig.json . ---",
+    "path": "/devdocs/testing/linting/"
+  },
+  {
+    "title": "Type Checking & Static Analysis",
+    "heading": "TypeScript Config Highlights",
+    "content": "TypeScript Config Highlights - strict: true : Strict null checks, implicit any prevention, and strict bind/call/apply. - Path Aliases : - @shared/ - src/shared/ - @tools/ - src/sidepanel/tools/ - @components/ - src/sidepanel/components/ - Chrome Types : Full autocompletion and type checking for the Chrome Extensions API via @types/chrome .",
+    "path": "/devdocs/testing/linting/"
+  },
+  {
+    "title": "Base64 Encoder / Decoder",
+    "heading": "",
+    "content": "🔤 Base64 Encoder / Decoder Component : src/sidepanel/tools/Base64Tool.tsx Styles : src/sidepanel/tools/Base64Tool.css",
+    "path": "/devdocs/tools/base64/"
+  },
+  {
+    "title": "Base64 Encoder / Decoder",
+    "heading": "Overview",
+    "content": "Overview Encode and decode arbitrary text and files using standard Base64 or URL-Safe Base64 variants.",
+    "path": "/devdocs/tools/base64/"
+  },
+  {
+    "title": "Base64 Encoder / Decoder",
+    "heading": "Features",
+    "content": "Features - Text Mode : Full UTF-8 support (handling emojis and multibyte unicode characters safely without truncation). - URL-Safe Toggle : Switches between standard + / = and URL-safe - alphabet without padding. - File / Image to Data URI : Drag-and-drop file encoder producing data:[mime];base64,... strings for inline CSS/HTML usage. - Bi-directional conversion : Instant toggling between Encode and Decode modes.",
+    "path": "/devdocs/tools/base64/"
+  },
+  {
+    "title": "Diff Checker & Comparison",
+    "heading": "",
+    "content": "🔀 Diff Checker & Comparison Component : src/sidepanel/tools/DiffChecker.tsx Styles : src/sidepanel/tools/DiffChecker.css",
+    "path": "/devdocs/tools/diff-checker/"
+  },
+  {
+    "title": "Diff Checker & Comparison",
+    "heading": "Overview",
+    "content": "Overview Compare two blocks of code, JSON, or text with fine-grained visual highlighting.",
+    "path": "/devdocs/tools/diff-checker/"
+  },
+  {
+    "title": "Diff Checker & Comparison",
+    "heading": "Features",
+    "content": "Features - Split View & Unified View : Toggle between dual-column side-by-side comparison and Git-style unified diff. - Granular Highlighting : Identifies added lines (green), removed lines (red), and inline character-level mutations. - Whitespace & Case Options : Toggle options to ignore trailing whitespace or ignore casing differences. - Swap Inputs : 1-click button to flip Left and Right panes.",
+    "path": "/devdocs/tools/diff-checker/"
+  },
+  {
+    "title": "Dummy Data Generator",
+    "heading": "",
+    "content": "🎲 Dummy Data Generator Component : src/sidepanel/tools/DummyDataGenerator.tsx Styles : src/sidepanel/tools/DummyDataGenerator.css",
+    "path": "/devdocs/tools/dummy-data/"
+  },
+  {
+    "title": "Dummy Data Generator",
+    "heading": "Overview",
+    "content": "Overview Generate synthetic mock datasets for frontend prototyping, API testing, and database seeding without relying on external mock services.",
+    "path": "/devdocs/tools/dummy-data/"
+  },
+  {
+    "title": "Dummy Data Generator",
+    "heading": "Features",
+    "content": "Features - Field Schema Builder : Add custom field definitions with specific data types: - Names (Full Name, First, Last, Username) - Internet (Email, Domain, IPv4, User-Agent, Avatar URL) - Location (Country, City, Street, Zip code, Lat/Long) - Commerce (Price, Product Name, Category) - Datetime & Identifiers (UUID v4, Epoch Timestamp, ISO Date) - Output Formats : Export as JSON Array, JSON Lines (NDJSON), or CSV table. - Custom Count : Generate from 1 to 200 records instantly.",
+    "path": "/devdocs/tools/dummy-data/"
+  },
+  {
+    "title": "Hash & HMAC Generator",
+    "heading": "",
+    "content": "🔒 Hash & HMAC Generator Component : src/sidepanel/tools/HashGenerator.tsx Styles : src/sidepanel/tools/HashGenerator.css",
+    "path": "/devdocs/tools/hash-generator/"
+  },
+  {
+    "title": "Hash & HMAC Generator",
+    "heading": "Overview",
+    "content": "Overview Calculates cryptographic hashes and HMACs directly inside the browser using standard Web Crypto APIs ( window.crypto.subtle ) and pure JavaScript algorithms.",
+    "path": "/devdocs/tools/hash-generator/"
+  },
+  {
+    "title": "Hash & HMAC Generator",
+    "heading": "Supported Algorithms",
+    "content": "Supported Algorithms - SHA-256 : Standard 256-bit secure hash. - SHA-512 : 512-bit high-security digest. - SHA-1 : Legacy SHA-1 hash for git commit reference checking. - MD5 : Legacy 128-bit checksum calculation. - HMAC Calculation : Computes keyed-hash message authentication codes using a custom secret key. - Formatting Options : Output in lowercase hex, uppercase hex, or Base64.",
+    "path": "/devdocs/tools/hash-generator/"
+  },
+  {
+    "title": "JSON Formatter & Validator",
+    "heading": "",
+    "content": "🗄️ JSON Formatter & Validator Component : src/sidepanel/tools/JsonFormatter.tsx Styles : src/sidepanel/tools/JsonFormatter.css",
+    "path": "/devdocs/tools/json-formatter/"
+  },
+  {
+    "title": "JSON Formatter & Validator",
+    "heading": "Overview",
+    "content": "Overview A high-performance JSON formatting, linting, minification, and inspection tool designed to handle large JSON responses effortlessly.",
+    "path": "/devdocs/tools/json-formatter/"
+  },
+  {
+    "title": "JSON Formatter & Validator",
+    "heading": "Key Capabilities",
+    "content": "Key Capabilities 1. Prettify : Format unstructured JSON with customizable indentation (2 spaces, 4 spaces, or Tabs). 2. Minify : Strip all unnecessary whitespace for compact network payloads. 3. Sort Keys : Alphabetically order object keys recursively for consistent comparisons. 4. Syntax Error Pointer : Pinpoint exact line and character positions of syntax errors with helpful error messages. 5. Stats & Metrics : Live counters showing byte size, character count, depth, and total node count. 6. 1-Click Actions : Instant copy, clear, and download as .json .",
+    "path": "/devdocs/tools/json-formatter/"
+  },
+  {
+    "title": "JWT Decoder & Inspector",
+    "heading": "",
+    "content": "🔑 JWT Decoder & Inspector Component : src/sidepanel/tools/JwtDecoder.tsx Styles : src/sidepanel/tools/JwtDecoder.css",
+    "path": "/devdocs/tools/jwt-decoder/"
+  },
+  {
+    "title": "JWT Decoder & Inspector",
+    "heading": "Overview",
+    "content": "Overview Inspect JSON Web Tokens (JWT) client-side with zero data transmission. Decodes Header, Payload claims, and provides human-readable dates for timestamps.",
+    "path": "/devdocs/tools/jwt-decoder/"
+  },
+  {
+    "title": "JWT Decoder & Inspector",
+    "heading": "Features",
+    "content": "Features - Split Part Colorizer : Distinct color-coding for Header (Red/Pink), Payload (Purple/Cyan), and Signature (Cyan/Blue). - Token Expiration Tracker : Evaluates exp , nbf , and iat claims, displaying live countdown status (Active, Expiring Soon, Expired). - Standard Claim Hints : Displays descriptive labels for standard registered claims ( iss , sub , aud , exp , nbf , iat , jti ). - Signature Verification Notice : Clarifies client-side signature status while keeping parsing 100% private and offline.",
+    "path": "/devdocs/tools/jwt-decoder/"
+  },
+  {
+    "title": "Markdown Live Preview",
+    "heading": "",
+    "content": "📝 Markdown Live Preview Component : src/sidepanel/tools/MarkdownPreview.tsx Styles : src/sidepanel/tools/MarkdownPreview.css",
+    "path": "/devdocs/tools/markdown-preview/"
+  },
+  {
+    "title": "Markdown Live Preview",
+    "heading": "Overview",
+    "content": "Overview Side-by-side GitHub-flavored markdown editor and live HTML renderer.",
+    "path": "/devdocs/tools/markdown-preview/"
+  },
+  {
+    "title": "Markdown Live Preview",
+    "heading": "Features",
+    "content": "Features - GitHub Flavored Markdown (GFM) : Tables, task lists, strikethrough, autolinks, fenced code blocks with language syntax highlighting. - Dual Pane View : Real-time synced preview while typing. - HTML Export : Inspect raw rendered HTML source and copy clean HTML with one click. - Cheat Sheet Drawer : Fast access to markdown formatting syntax and examples.",
+    "path": "/devdocs/tools/markdown-preview/"
+  },
+  {
+    "title": "Developer Tools Overview",
+    "heading": "",
+    "content": "🛠️ Developer Tools Catalog hckr packages 11 developer utilities directly inside the browser side panel. Tool Component Key Features :--- :--- :--- 🗄️ $1 JsonFormatter.tsx Prettify, minify, sort keys, tree view, syntax highlighting, invalid JSON error locators. 🔑 $1 JwtDecoder.tsx Header/payload decoding, expiry timer, human-readable claim formats, signature validation visualizer. 🔤 $1 Base64Tool.tsx UTF-8 text & URL-safe base64 encoding/decoding, file-to-data-URI converter. 🌐 $1 UrlEncoder.tsx Encode/decode query params, path parsing, interactive query parameter key-value table editor. 🔒 $1 HashGenerator.tsx SHA-256, SHA-512, SHA-1, MD5, HMAC calculation using Web Crypto API. 🆔 $1 UuidGenerator.tsx Bulk v4 UUID generator, ULID, NanoID, uppercase/lowercase formatting. ⏱️ $1 TimestampConverter.tsx Epoch to ISO-8601/UTC/Local, relative duration, live clock, milliseconds toggle. 🔀 $1 DiffChecker.tsx Side-by-side & unified text diffing with word/character level highlighting. 🔍 $1 R",
+    "path": "/devdocs/tools/overview/"
+  },
+  {
+    "title": "Regex Tester & Debugger",
+    "heading": "",
+    "content": "🔍 Regex Tester & Debugger Component : src/sidepanel/tools/RegexTester.tsx Styles : src/sidepanel/tools/RegexTester.css",
+    "path": "/devdocs/tools/regex-tester/"
+  },
+  {
+    "title": "Regex Tester & Debugger",
+    "heading": "Overview",
+    "content": "Overview Test regular expressions interactively against multiline sample text with real-time match highlighting and capture group inspection.",
+    "path": "/devdocs/tools/regex-tester/"
+  },
+  {
+    "title": "Regex Tester & Debugger",
+    "heading": "Features",
+    "content": "Features - Flag Toggles : Clickable flags for Global ( g ), Case-Insensitive ( i ), Multiline ( m ), DotAll ( s ), and Unicode ( u ). - Visual Highlighting : Background highlight overlays across all matching spans in the test string. - Match Table : Detailed breakdown showing Match Index, Full Match String, and individual Capture Groups ( $1 , $2 , named groups). - Substitution / Replace Mode : Test string replacement patterns using capture group references.",
+    "path": "/devdocs/tools/regex-tester/"
+  },
+  {
+    "title": "Timestamp & Epoch Converter",
+    "heading": "",
+    "content": "⏱️ Timestamp & Epoch Converter Component : src/sidepanel/tools/TimestampConverter.tsx Styles : src/sidepanel/tools/TimestampConverter.css",
+    "path": "/devdocs/tools/timestamp-converter/"
+  },
+  {
+    "title": "Timestamp & Epoch Converter",
+    "heading": "Overview",
+    "content": "Overview Convert between Unix Epoch timestamps and human-readable date/time formats across timezones.",
+    "path": "/devdocs/tools/timestamp-converter/"
+  },
+  {
+    "title": "Timestamp & Epoch Converter",
+    "heading": "Features",
+    "content": "Features - Live Epoch Clock : Real-time ticking counter showing current epoch in seconds and milliseconds. - Auto-Detection : Intelligently identifies whether input numbers are in Seconds (10 digits) or Milliseconds (13 digits). - Multi-Format Output : - ISO-8601 string ( YYYY-MM-DDTHH:mm:ss.sssZ ) - UTC string - Local timezone with locale formatting - Relative time (\"5 minutes ago\", \"in 2 hours\") - Date to Timestamp : Interactive date & time picker that outputs corresponding epoch values.",
+    "path": "/devdocs/tools/timestamp-converter/"
+  },
+  {
+    "title": "URL Encoder & Query Parser",
+    "heading": "",
+    "content": "🌐 URL Encoder & Query Parser Component : src/sidepanel/tools/UrlEncoder.tsx Styles : src/sidepanel/tools/UrlEncoder.css",
+    "path": "/devdocs/tools/url-encoder/"
+  },
+  {
+    "title": "URL Encoder & Query Parser",
+    "heading": "Overview",
+    "content": "Overview A dual-mode URL utility providing full URL component encoding ( encodeURIComponent ) and an interactive URL query parameter table editor.",
+    "path": "/devdocs/tools/url-encoder/"
+  },
+  {
+    "title": "URL Encoder & Query Parser",
+    "heading": "Features",
+    "content": "Features - Standard Encoding : Encode or decode URI strings, handling reserved characters and special symbols. - Visual Query Params Table : Paste any full URL to automatically parse the Protocol, Hostname, Path, and Query Params into an editable key-value grid. - Live Reassembly : Modify query parameters or add new keys and watch the URL reassemble dynamically with proper encoding.",
+    "path": "/devdocs/tools/url-encoder/"
+  },
+  {
+    "title": "UUID & ID Generator",
+    "heading": "",
+    "content": "🆔 UUID & ID Generator Component : src/sidepanel/tools/UuidGenerator.tsx Styles : src/sidepanel/tools/UuidGenerator.css",
+    "path": "/devdocs/tools/uuid-generator/"
+  },
+  {
+    "title": "UUID & ID Generator",
+    "heading": "Overview",
+    "content": "Overview Generate single or bulk cryptographically secure identifiers for testing and database seeding.",
+    "path": "/devdocs/tools/uuid-generator/"
+  },
+  {
+    "title": "UUID & ID Generator",
+    "heading": "Features",
+    "content": "Features - UUID v4 : Standard RFC 4122 randomly generated UUIDs via crypto.randomUUID() . - Bulk Generation : Generate 1 to 500 identifiers in a single click. - ULID / NanoID : Time-sortable and compact URL-friendly ID options. - Formatting Options : - Uppercase vs. Lowercase - With or without hyphens - Wrapped in quotes or array syntax",
+    "path": "/devdocs/tools/uuid-generator/"
+  },
+  {
+    "title": "Tmux Multi-Pane Development",
+    "heading": "",
+    "content": "🖥️ Tmux Multi-Pane Development Launch an integrated terminal workspace with one command:",
+    "path": "/devdocs/workflows/dev-tmux/"
+  },
+  {
+    "title": "Tmux Multi-Pane Development",
+    "heading": "Layout Architecture",
+    "content": "Layout Architecture ---",
+    "path": "/devdocs/workflows/dev-tmux/"
+  },
+  {
+    "title": "Tmux Multi-Pane Development",
+    "heading": "Tmux Session Management",
+    "content": "Tmux Session Management - Detach session : Press Ctrl+B then D . - Reattach session : Run make dev-tmux (automatically reattaches to existing session). - Kill dev ports : Run make dev-kill-ports to stop all listeners on ports 5173 & 8878.",
+    "path": "/devdocs/workflows/dev-tmux/"
+  },
+  {
+    "title": "Makefile Reference & Commands",
+    "heading": "",
+    "content": "⚡ Makefile Reference & Commands The project root includes a Makefile that unifies all developer operations, port management, testing, and documentation commands.",
+    "path": "/devdocs/workflows/make-commands/"
+  },
+  {
+    "title": "Makefile Reference & Commands",
+    "heading": "All Available Targets",
+    "content": "All Available Targets Target Description Example :--- :--- :--- make help Display all documented targets dynamically. make help make install Install root npm dependencies. make install make dev Start Vite in watch mode to automatically rebuild dist/ . make dev make build Typecheck and compile production bundle in dist/ . make build make clean Remove dist/ and hckr-extension.zip . make clean make zip Build and package extension into hckr-extension.zip . make zip make lint Run TypeScript typecheck ( tsc --noEmit ). make lint make test-e2e Run headless Playwright test suite. make test-e2e make test-e2e-headed Run Playwright test suite in headed browser mode. make test-e2e-headed make test-e2e-ui Open interactive Playwright UI runner. make test-e2e-ui make verify Run full validation pipeline ( lint , build , zip ). make verify make docs-install Install Docusaurus dependencies in devdocs/ . make docs-install make docs-dev Start DevDocs local server on port 8878 (or DOCS PORT ). make docs-de",
+    "path": "/devdocs/workflows/make-commands/"
+  }
+]
